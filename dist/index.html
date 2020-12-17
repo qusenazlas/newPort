@@ -7,10 +7,13 @@
     <!-- <link rel="stylesheet" href="./stylesheets/css/styles.css"> -->
     <title>Nattapong Anuwong</title>
     <link rel="shortcut icon" href="./images/others/profile-s.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="preload">
 </head>
 
 <body>
     <section class="menu">
+        <a href="javascripts:void()" id="close-icon" ><img src="./images/icons/close_s.png" alt="" icon-close="yes" class="menu-icon"  loading=lazy></a>
         <div class="menu-wrapper">
             <a class="menu-list">HOME</a>
             <a class="menu-list">MY JOB</a>
@@ -22,17 +25,17 @@
         </div>
     </section>
     <p class="page-title"></p>
-    <a href="#"><img src="./images/icons/menu_s.png" alt="" class="menu-icon" loading=lazy></a>
+    <a href="javascripts:void()" id="menu-icon"><img src="./images/icons/menu_s.png" alt="" class="menu-icon"  not-close="yes" loading=lazy></a>
     <section class="home">
         <img src="./images/others/profile-s.png" alt="" class="profile-pic" loading=lazy>
-        <p class="greeting-text">Greeting, I’m</p>
-        <h1 class="f-name">NATTAPONG</h1>
-        <h4 class="l-name">ANUWONG</h4>
+        <p class="greeting-text home-greet">Greeting, I’m</p>
+        <h1 class="f-name home-fname">NATTAPONG</h1>
+        <h4 class="l-name home-lname">ANUWONG</h4>
     </section>
     <section class="my-job">
-        <p class="greeting-text">I’m a</p>
-        <h1 class="f-name">FRONTEND</h1>
-        <h4 class="l-name">DEVELOPER</h4>
+        <p class="greeting-text" my-job>I’m a</p>
+        <h1 class="f-name" my-job>FRONTEND</h1>
+        <h4 class="l-name" my-job>DEVELOPER</h4>
     </section>
     <section class="education">
         <div class="timeline">
@@ -265,7 +268,7 @@
             </div>
         </div>
     </section>
-    <script src="./index.js" ></script>
+    <script defer src="./index.js"  ></script>
 <script src="index.js"></script></body>
 
 </html>
