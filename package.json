@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "gzap": "^1.0.11",
+    "gsap": "^3.5.1",
     "rm": "^0.1.8",
     "scrollmagic": "^2.0.8"
   },
