@@ -14,9 +14,11 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
+
 .transcript-dl {
     color: $white-grey;
 }
+
 section {
     display: inline-block;
     height: 100%;
@@ -34,14 +36,16 @@ section {
     font-weight: 500;
     text-transform: uppercase;
 }
+
 .menu-icon {
     position: fixed;
     top: 2rem;
     right: 1.5rem;
     cursor: pointer;
-    @media screen and (min-width: 1024px) {
-        content: url("../../images/icons/menu_l.png");
-    }
+
+    // @media screen and (min-width: 1024px) {
+    //     content: url($menuIconL);
+    // }
 }
 
 .home {
@@ -49,11 +53,13 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     .profile-pic {
         margin-left: -8.5rem;
-        @media screen and (min-width: 1024px) {
-            content: url("../../images/others/profile-l.png");
-        }
+
+        // @media screen and (min-width: 1024px) {
+        //     content: url($myPicL);
+        // }
     }
 
     .greeting-text {
@@ -64,6 +70,7 @@ section {
         margin: 0;
         padding-top: 1rem;
         margin-left: -8.5rem;
+
         @media screen and (min-width: 1024px) {
             font-size: 2.8em;
             margin-left: -17.5rem;
@@ -90,6 +97,7 @@ section {
         font-weight: 500;
         margin: 0;
         margin-left: 8.5rem;
+
         @media screen and (min-width: 1024px) {
             font-size: 2.5em;
             margin-left: 20.5rem;
@@ -102,6 +110,7 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     .greeting-text {
         text-align: left;
         font-size: 1.2em;
@@ -110,6 +119,7 @@ section {
         margin: 0;
         padding-top: 1rem;
         margin-left: -11rem;
+
         @media screen and (min-width: 1024px) {
             font-size: 2.8em;
             margin-left: -24rem;
@@ -123,6 +133,7 @@ section {
         color: $white-grey;
         font-weight: 500;
         margin: 0;
+
         @media screen and (min-width: 1024px) {
             font-size: 5.6em;
         }
@@ -135,6 +146,7 @@ section {
         font-weight: 500;
         margin: 0;
         margin-left: 6rem;
+
         @media screen and (min-width: 1024px) {
             font-size: 2.5em;
             margin-left: 15rem;
@@ -147,22 +159,27 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+
     .timeline {
         display: flex;
         flex-direction: column;
         width: 85vw;
         height: auto;
         margin-top: 10rem;
+
         .timeline-box {
             display: flex;
             flex-direction: row;
             margin-top: 0.3rem;
+
             .guide-line {
                 display: inline-block;
                 height: 100%;
+
                 .guide-dot {
                     display: block;
                 }
+
                 .line-v {
                     display: block;
                     height: 12rem;
@@ -171,12 +188,14 @@ section {
                     margin-top: 0.3rem;
                 }
             }
+
             .details-text {
                 display: inline-block;
                 width: auto;
                 height: auto;
                 margin-left: 1rem;
                 margin-top: -0.2rem;
+
                 .intro-text {
                     font-size: 1.2em;
                     color: $light-gold;
@@ -184,6 +203,7 @@ section {
                     margin: 0;
                     padding-bottom: 1rem;
                 }
+
                 .main-text {
                     width: auto;
                     font-size: 2em;
@@ -191,6 +211,7 @@ section {
                     font-weight: 500;
                     margin: 0;
                 }
+
                 .details-text {
                     font-size: 1em;
                     color: $white-grey;
@@ -210,6 +231,7 @@ section {
 
     .skill-list-wrapper {
         margin-top: 10rem;
+
         .skill-list {
             width: 85vw;
             height: auto;
@@ -218,16 +240,19 @@ section {
             align-items: flex-start;
             justify-content: center;
             padding-bottom: 1.5rem;
+
             .list-head {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
+
                 .dropdown-icon {
                     width: 1.5em;
                     height: 1.5em;
                     display: flex;
                     margin-right: 0.5rem;
                 }
+
                 .skill-name {
                     display: flex;
                     font-size: 2em;
@@ -236,6 +261,7 @@ section {
                     margin: 0;
                 }
             }
+
             .skill-details {
                 display: none;
                 flex-direction: column;
@@ -244,6 +270,7 @@ section {
                 padding-top: 1rem;
                 padding-bottom: 1rem;
                 margin-left: 2rem;
+
                 .skill-details-text {
                     font-size: 1.2em;
                     color: $light-gold;
@@ -261,22 +288,27 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+
     .timeline {
         display: flex;
         flex-direction: column;
         width: 85vw;
         height: auto;
         margin-top: 10rem;
+
         .timeline-box {
             display: flex;
             flex-direction: row;
             margin-top: 0.3rem;
+
             .guide-line {
                 display: inline-block;
                 height: 100%;
+
                 .guide-dot {
                     display: block;
                 }
+
                 .line-v {
                     display: block;
                     height: 12rem;
@@ -285,12 +317,14 @@ section {
                     margin-top: 0.3rem;
                 }
             }
+
             .details-text {
                 display: inline-block;
                 width: auto;
                 height: auto;
                 margin-left: 1rem;
                 margin-top: -0.2rem;
+
                 .intro-text {
                     font-size: 1.2em;
                     color: $light-gold;
@@ -298,6 +332,7 @@ section {
                     margin: 0;
                     padding-bottom: 1rem;
                 }
+
                 .main-text {
                     width: auto;
                     font-size: 2em;
@@ -305,12 +340,14 @@ section {
                     font-weight: 500;
                     margin: 0;
                 }
+
                 .details-text {
                     width: 80vw;
                     font-size: 1em;
                     color: $white-grey;
                     font-weight: 400;
                     margin: 0;
+
                     .download-text {
                         text-decoration: none;
                         color: $light-gold;
@@ -327,6 +364,7 @@ section {
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
+
     .hobbies-wrapper {
         .hobby-1 {
             width: 18rem;
@@ -349,6 +387,7 @@ section {
             padding-right: 1em;
             display: block;
         }
+
         .hobby-3 {
             width: 18rem;
             font-size: 2.5em;
@@ -359,6 +398,7 @@ section {
             padding-right: 1em;
             display: block;
         }
+
         .hobby-4 {
             width: 18rem;
             font-size: 2.25em;
@@ -383,6 +423,7 @@ section {
             width: 85vw;
             height: auto;
             padding-bottom: 3rem;
+
             .title {
                 font-size: 2.5em;
                 color: $white-grey;
@@ -392,6 +433,7 @@ section {
                 padding-left: 1em;
                 display: block;
             }
+
             .contact-details {
                 font-size: 1em;
                 color: $light-gold;
@@ -412,11 +454,13 @@ section {
     align-items: flex-start;
     justify-content: center;
     background-color: $orange-brown;
+
     .menu-wrapper {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
+
         .menu-list {
             font-size: 2em;
             color: $white-grey;

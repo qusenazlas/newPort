@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
+    mode: 'development',
     entry: './src/index.js',
     output: {
         filename: 'index.js',
@@ -20,25 +21,29 @@ module.exports = {
                 ]
             },
             {
+                test: /\.(jpg|png|gif|svg)$/,
+                use: {
+                  loader: 'url-loader',
+                },
+            },
+            {
                 test: /\.scss$/,
                 use: [
-                    'style-loader',
-                    'css-loader',
-                    'sass-loader'
+                  // Creates `style` nodes from JS strings
+                  "style-loader",
+                  // Translates CSS into CommonJS
+                  "css-loader",
+                  // Compiles Sass to CSS
+                  "sass-loader",
                 ],
-            },
-            // {
-            //     test: /\.(png|jpe?g|gif)$/i,
-            //     loader: 'file-loader',
-            //     options: {
-            //         publicPath: 'images',
-            //     },
-            // },
-
+              },
         ],
     },
+
     plugins: [
+        
         new HtmlWebpackPlugin({
+            title: 'Development',
             filename: 'index.html',
             template: 'src/index.html'
         }),
@@ -58,8 +63,10 @@ module.exports = {
             ]
         })
     ],
+    devtool: 'inline-source-map',
     devServer: {
-        contentBase: path.join(__dirname, 'dist'),
+        contentBase: path.join(__dirname, './dist'),
         port: 9000
     },
+    
 }
